@@ -1,0 +1,4 @@
+# 코드 15.1 .dockerignore를 사용한 파일 제외
+
+.git
+.DS_Store

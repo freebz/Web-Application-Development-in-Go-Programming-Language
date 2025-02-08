@@ -1,0 +1,23 @@
+# 코드 15.11 .golangci.yml의 정적 분석 설정
+
+linters-settings:
+  govet:
+    check-shadowing: false
+  gocyclo:
+    min-complexity: 30
+  misspell:
+    locale: US
+
+linters:
+  disable-all: true
+  enable:
+    - goimports
+    - unused
+    - errcheck
+    - gocognit
+    - gocyclo
+    - gofmt
+    - govet
+    - misspell
+    - staticcheck
+    - whitespace
