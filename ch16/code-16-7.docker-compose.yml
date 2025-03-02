@@ -1,0 +1,13 @@
+# 코드 16.7 환경 변수를 설정해서 바인딩하는 포트를 변경한다
+
+      build:
+        args:
+          - target=dev
++     environment:
++       TODO_ENV: dev
++       PORT: 8080
+      volumes:
+          - .:/app
+      ports:
+-       - "18000:80"
++       - "18000:8080"
