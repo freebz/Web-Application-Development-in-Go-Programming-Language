@@ -1,0 +1,21 @@
+// 코드 17.9 골든 테스트에서 사용하는 JSON 파일 내용
+
+// handler/testdata/add_task/ok_req.json.golden 내용
+{
+  "title": "Implement a handler"
+}
+
+// handler/testdata/add_task/ok_rsp.json.golden 내용
+{
+  "id": 1
+}
+
+// handler/testdata/add_task/bad_req.json.golden 내용
+{
+  "title": "Implement a handler"
+}
+
+// handler/testdata/add_task/bad_rsp.json.golden 내용
+{
+  "message": "Key: 'Title' Error:Field validation for 'Title' failed on the 'required' tag"
+}
