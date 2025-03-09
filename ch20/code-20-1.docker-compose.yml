@@ -1,0 +1,26 @@
+# 코드 20.1 도커 구성기에서 레디스를 실행한다
+
+       TODO_DB_DATABASE: todo
++      TODO_REDIS_HOST: todo-redis
++      TODO_REDIS_PORT: 6379
+     volumes:
+       - .:/app
+     ports:
+       - "18000:8080"
+   todo-db:
+     image: mysql:8.0.29
+     platform: linux/amd64
+# 중략
+       - $PWD/_tools/mysql/conf.d:/etc/mysql/conf.d:cached
+     ports:
+       - "33306:3306"
++  todo-redis:
++    image: "redis:latest"
++    container_name: todo-redis
++    ports:
++      - "36379:6379"
++    volumes:
++      - todo-redis-data:/data
+ volumes:
+   todo-db-data:
++  todo-redis-data:

@@ -1,0 +1,28 @@
+// 코드 20.27 TestLogin_ServeHTTP 함수에서 사용하는 JSON 파일
+
+// handler/testdata/login/bad_req.json.golden
+{
+  "user_name": "freebz",
+  "passward": "test"
+}
+
+// handler/testdata/login/bad_rsp.json.golden
+{
+  "message": "Key: 'Password' Error:Field validation for 'Password' failed on the 'required' tag"
+}
+
+// handler/testdata/login/internal_server_error_rsp.json.golden
+{
+  "message": "error from mock"
+}
+
+// handler/testdata/login/ok_req.json.golden
+{
+  "user_name": "freebz",
+  "password": "test"
+}
+
+// handler/testdata/login/ok_rsp.json.golden
+{
+  "access_token": "from_moq"
+}

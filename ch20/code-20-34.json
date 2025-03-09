@@ -1,0 +1,11 @@
+// 코드 20.34 JWT 응답 확인
+
+{
+  "exp": 1741447596,
+  "iat": 1741445796,
+  "iss": "github.com/freebz/go_todo_app",
+  "jti": "3563926c-0104-4322-8a74-501e9b09f80e",
+  "role": "user",
+  "sub": "access_token",
+  "user_name": "john"
+}
